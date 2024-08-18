@@ -1,0 +1,29 @@
+img{
+    float: right;
+}
+
+p{
+    text-align: center;
+}
+
+body{
+    display: inline-block;
+    background-color: lightseagreen;
+}
+
+a:link{
+    background-color: aqua;
+}
+
+
+a:hover{
+    background-color: lightsalmon;
+}
+
+a:active{
+    background-color: brown;
+}
+
+p:hover{
+    background-color: lightsalmon;
+}
