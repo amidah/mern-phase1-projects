@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Form Validation</title>
+    </head>
+    <body>
+        <h2>Login Form</h2>
+        <form method="post" onsubmit="validation()" action="">
+            <input type="text" id="user" placeholder="user name"><br>
+            <input type="password" id="pwd" placeholder="password"><br>
+            <input type="submit" value="Submit" id="sub">
+        </form>
+        <script>
+                function validation(){
+                    var un = document.getElementById('user').value;
+                    var pwd = document.getElementById('pwd').value;
+                    if(un == "student" && pwd == "simplilearn"){
+                        window.alert("User details are correct, Login is valid and successfull.");
+                    }
+                    else{
+                        window.alert("User details are incorrect, Please enter valid username and password.");
+                    }
+                }
+        </script>
+    </body>
+</html>
