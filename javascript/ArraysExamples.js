@@ -58,6 +58,39 @@ console.log("Filtered Even Values Array: " + filteredEvenValuesArray);
 let sum = myArray.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 console.log("Sum :" + sum);
 
+// Arrays Mutability
+let mutableArr = [1, 2, 3, 4, 5];
+console.log("mutableArr: ", mutableArr);
+
+mutableArr[2] = 10;
+console.log("Modified array at index 2: ", mutableArr);
+
+mutableArr.length = 3;
+console.log("Mutable Arr after changing length: ", mutableArr);
+
+mutableArr.push(11, 12, 13);
+console.log("Mutable Arr after pushing some values: ", mutableArr);
+
+mutableArr.pop(13);
+console.log("Mutable Arr after poping out last value: ", mutableArr);
+
+
+// Array Immutability
+let immutableArr = [1, 2, 3, 4, 5];
+console.log("Immutable Arr", immutableArr);
+
+let newArr = immutableArr.map(item => item * 2);
+console.log("New Array using map method: ", newArr)
+
+// avoid direct mutations
+let wihtoutMutation = [...immutableArr, 6, 7];
+console.log("New array without direct modification: ", wihtoutMutation);
+
+
+
+
+
+
 
 
 
